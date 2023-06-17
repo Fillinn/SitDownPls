@@ -1,0 +1,2301 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SitDownPls</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./hystmodal.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="header offset-30">
+      <div class="header-tablet">
+        <div class="header-tablet__top header-tablet__top_display">
+          <div class="container header-tablet__top_flex">
+            <div class="header__choice">
+              <label class="header__city">Ваш регион:</label>
+              <select aria-label="выбор город" class="ChoiceRegion choice1">
+                <option value="1">Москва</option>
+                <option value="2">Казань</option>
+                <option value="3">Уфа</option>
+                <option value="4">Пермь</option>
+              </select>
+            </div>
+            <a href="#" class="header__iphone" aria-label="Номер телефона">
+              <span class="header__icon">
+                <svg
+                  class="social-icon"
+                  aria-hidden="true"
+                  width="18"
+                  height="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.3425 12.0983C15.215 12.0983 14.1242 11.915 13.1067 11.585C12.7858 11.475 12.4283 11.5575 12.1808 11.805L10.7417 13.6108C8.1475 12.3733 5.71833 10.0358 4.42583 7.35L6.21333 5.82833C6.46083 5.57167 6.53417 5.21417 6.43333 4.89333C6.09417 3.87583 5.92 2.785 5.92 1.6575C5.92 1.1625 5.5075 0.75 5.0125 0.75H1.84083C1.34583 0.75 0.75 0.97 0.75 1.6575C0.75 10.1733 7.83583 17.25 16.3425 17.25C16.9933 17.25 17.25 16.6725 17.25 16.1683V13.0058C17.25 12.5108 16.8375 12.0983 16.3425 12.0983Z"
+                  />
+                </svg>
+              </span>
+              +7 (495) 885-45-47
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header__top header__top_gray">
+        <div class="container header-flex">
+          <div class="header__logo header__logo_smartphone">
+            <svg aria-hidden="true" class="header__logo-svg">
+              <use xlink:href="./images/sprite.svg#header-logo"></use>
+            </svg>
+          </div>
+          <div class="header__choice tablet-hidden">
+            <label class="header__city">Ваш регион:</label>
+            <select aria-label="выбор город" class="ChoiceRegion choice1">
+              <option value="1">Москва</option>
+              <option value="2">Казань</option>
+              <option value="3">Уфа</option>
+              <option value="4">Пермь</option>
+            </select>
+          </div>
+          <a
+            href="#"
+            class="header__iphone tablet-hidden"
+            aria-label="Номер телефона"
+          >
+            <span class="header__icon">
+              <svg
+                class="social-icon"
+                aria-hidden="true"
+                width="18"
+                height="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.3425 12.0983C15.215 12.0983 14.1242 11.915 13.1067 11.585C12.7858 11.475 12.4283 11.5575 12.1808 11.805L10.7417 13.6108C8.1475 12.3733 5.71833 10.0358 4.42583 7.35L6.21333 5.82833C6.46083 5.57167 6.53417 5.21417 6.43333 4.89333C6.09417 3.87583 5.92 2.785 5.92 1.6575C5.92 1.1625 5.5075 0.75 5.0125 0.75H1.84083C1.34583 0.75 0.75 0.97 0.75 1.6575C0.75 10.1733 7.83583 17.25 16.3425 17.25C16.9933 17.25 17.25 16.6725 17.25 16.1683V13.0058C17.25 12.5108 16.8375 12.0983 16.3425 12.0983Z"
+                />
+              </svg>
+            </span>
+            +7 (495) 885-45-47
+          </a>
+          <ul class="header__list header__list_display">
+            <li class="header__item header__item_margin">
+              <a href="#" class="header__link text-style"> О компании </a>
+            </li>
+            <li class="header__item header__item_margin">
+              <a href="#" class="header__link text-style">
+                Гарантия и возврат
+              </a>
+            </li>
+            <li class="header__item header__item_margin">
+              <a href="#" class="header__link text-style">
+                Корпоративным клиентам
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link text-style"> Дизайн-решение </a>
+            </li>
+          </ul>
+          <div class="header__user header__user_width user header__user_first">
+            <ul class="user__list">
+              <li class="user__item">
+                <a href="#" class="user__link" aria-label="Личный кабинет">
+                  <svg
+                    class="user__icon"
+                    width="26"
+                    height="28"
+                    viewBox="0 0 26 28"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24.98 22.8503C24.3278 21.2785 23.3813 19.8508 22.1933 18.6467C21.0089 17.4392 19.6059 16.4764 18.0617 15.8116C18.0478 15.8045 18.034 15.801 18.0202 15.794C20.1742 14.2111 21.5744 11.6327 21.5744 8.72362C21.5744 3.90452 17.7367 0 13 0C8.26333 0 4.42559 3.90452 4.42559 8.72362C4.42559 11.6327 5.82585 14.2111 7.97982 15.7975C7.96599 15.8045 7.95216 15.808 7.93833 15.8151C6.38941 16.4799 4.99952 17.4332 3.80671 18.6503C2.61981 19.8553 1.67349 21.2827 1.02003 22.8538C0.37806 24.3918 0.0318323 26.0409 8.64563e-05 27.7116C-0.000836348 27.7491 0.00563604 27.7864 0.0191224 27.8214C0.0326088 27.8564 0.0528363 27.8882 0.0786128 27.9151C0.104389 27.942 0.135194 27.9633 0.16921 27.9779C0.203227 27.9925 0.239768 28 0.27668 28H2.35113C2.50326 28 2.62427 27.8769 2.62773 27.7256C2.69688 25.01 3.76868 22.4668 5.66335 20.5392C7.62371 18.5447 10.2271 17.4472 13 17.4472C15.7729 17.4472 18.3763 18.5447 20.3367 20.5392C22.2313 22.4668 23.3031 25.01 23.3723 27.7256C23.3757 27.8804 23.4967 28 23.6489 28H25.7233C25.7602 28 25.7968 27.9925 25.8308 27.9779C25.8648 27.9633 25.8956 27.942 25.9214 27.9151C25.9472 27.8882 25.9674 27.8564 25.9809 27.8214C25.9944 27.7864 26.0008 27.7491 25.9999 27.7116C25.9653 26.0301 25.6231 24.3945 24.98 22.8503ZM13 14.7739C11.413 14.7739 9.91943 14.1442 8.79577 13.001C7.67211 11.8578 7.05323 10.3382 7.05323 8.72362C7.05323 7.10905 7.67211 5.58945 8.79577 4.44623C9.91943 3.30301 11.413 2.67337 13 2.67337C14.587 2.67337 16.0806 3.30301 17.2042 4.44623C18.3279 5.58945 18.9468 7.10905 18.9468 8.72362C18.9468 10.3382 18.3279 11.8578 17.2042 13.001C16.0806 14.1442 14.587 14.7739 13 14.7739Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="user__item">
+                <a
+                  href="#"
+                  class="user__link user__basket"
+                  aria-label="Мини-корзина"
+                >
+                  <span class="user__number">3</span>
+                  <svg
+                    class="user__icon"
+                    width="30"
+                    height="28"
+                    viewBox="0 0 30 28"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M28.8162 19.8503H8.90202L9.90191 17.7365L26.5154 17.7052C27.0772 17.7052 27.5588 17.2887 27.6591 16.7125L29.9599 3.34598C30.0201 2.99541 29.9298 2.63444 29.7091 2.36023C29.6 2.22528 29.4639 2.11658 29.3103 2.04166C29.1567 1.96674 28.9892 1.9274 28.8195 1.92637L7.68476 1.85348L7.50418 0.971861C7.39048 0.40957 6.90224 0 6.34712 0H1.18047C0.86739 0 0.567133 0.129087 0.345752 0.358864C0.124371 0.588641 0 0.900285 0 1.22524C0 1.55019 0.124371 1.86184 0.345752 2.09161C0.567133 2.32139 0.86739 2.45048 1.18047 2.45048H5.3907L6.17991 6.34486L8.12284 16.1086L5.62145 20.3466C5.49155 20.5286 5.4133 20.7446 5.39557 20.9704C5.37784 21.1961 5.42134 21.4225 5.52112 21.6239C5.72177 22.0369 6.12641 22.2973 6.57452 22.2973H8.67462C8.2269 22.9145 7.98508 23.6662 7.98573 24.4388C7.98573 26.4034 9.52402 28 11.4168 28C13.3096 28 14.8478 26.4034 14.8478 24.4388C14.8478 23.6648 14.6004 22.9116 14.159 22.2973H19.5463C19.0986 22.9145 18.8568 23.6662 18.8574 24.4388C18.8574 26.4034 20.3957 28 22.2885 28C24.1812 28 25.7195 26.4034 25.7195 24.4388C25.7195 23.6648 25.4721 22.9116 25.0307 22.2973H28.8195C29.4683 22.2973 30 21.7489 30 21.072C29.9981 20.7474 29.8725 20.4368 29.6507 20.2079C29.4289 19.979 29.1289 19.8504 28.8162 19.8503ZM8.17635 4.26925L27.4317 4.33519L25.5456 15.2964L10.4202 15.3242L8.17635 4.26925ZM11.4168 25.5356C10.8349 25.5356 10.36 25.0428 10.36 24.4388C10.36 23.8349 10.8349 23.342 11.4168 23.342C11.9987 23.342 12.4735 23.8349 12.4735 24.4388C12.4735 24.7297 12.3622 25.0087 12.164 25.2144C11.9658 25.4201 11.6971 25.5356 11.4168 25.5356ZM22.2885 25.5356C21.7066 25.5356 21.2317 25.0428 21.2317 24.4388C21.2317 23.8349 21.7066 23.342 22.2885 23.342C22.8704 23.342 23.3452 23.8349 23.3452 24.4388C23.3452 24.7297 23.2339 25.0087 23.0357 25.2144C22.8375 25.4201 22.5687 25.5356 22.2885 25.5356Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header__middle">
+        <div class="container header-flex">
+          <button class="header__burger burger"></button>
+          <div class="menu">
+            <div class="menu__content">
+              <button class="back-button"></button>
+              <ul class="menu__list">
+                <li>
+                  <ul class="menu__list_reset menu__list_right">
+                    <li class="menu__item text-style-title">
+                      <a href="#"> Каталог </a>
+                    </li>
+                    <li class="menu__item text-style-title">
+                      <a href="#"> Магазины </a>
+                    </li>
+                    <li class="menu__item text-style-title">
+                      <a href="#"> Шоу-рум </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="menu__list_reset menu__list_left">
+                    <li class="menu__item text-style-title">
+                      <a href="#"> Доставка и оплата </a>
+                    </li>
+                    <li class="menu__item text-style-title">
+                      <a href="#"> Дисконт </a>
+                    </li>
+                    <li class="menu__item text-style-title">
+                      <a href="#"> Контакты </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <ul class="menu-smartphone">
+              <li class="menu-smartphone__left">
+                <ul class="menu-smartphone__list">
+                  <li class="menu-smartphone__item">
+                    <a href="#" class="menu__link text-style"> О компании </a>
+                  </li>
+                  <li class="menu-smartphone__item">
+                    <a href="#" class="menu__link text-style">
+                      Гарантия и возврат
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-smartphone__right">
+                <ul class="menu-smartphone__list">
+                  <li class="menu-smartphone__item">
+                    <a href="#" class="menu__link text-style">
+                      Корпоративным клиентам
+                    </a>
+                  </li>
+                  <li class="menu-smartphone__item">
+                    <a href="#" class="menu__link text-style">
+                      Дизайн-решение
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="header__logo header__logo_display">
+            <svg aria-hidden="true" class="header__logo-svg">
+              <use xlink:href="./images/sprite.svg#header-logo"></use>
+            </svg>
+          </div>
+          <ul class="header__list header__list_last">
+            <li class="header__item">
+              <a
+                href="./catalog.html"
+                class="header__link header__link_font_16 text-style-title"
+              >
+                Каталог
+              </a>
+            </li>
+            <li class="header__item">
+              <a
+                href="#"
+                class="header__link header__link_font_16 text-style-title"
+              >
+                Магазины
+              </a>
+            </li>
+            <li class="header__item">
+              <a
+                href="#"
+                class="header__link header__link_font_16 text-style-title"
+              >
+                Шоу-рум
+              </a>
+            </li>
+            <li class="header__item">
+              <a
+                href="#"
+                class="header__link header__link_font_16 text-style-title"
+              >
+                Доставка и&nbsp;оплата
+              </a>
+            </li>
+            <li class="header__item">
+              <a
+                href="#"
+                class="header__link header__link_font_16 text-style-title"
+              >
+                Дисконт
+              </a>
+            </li>
+            <li class="header__item header__item_font-16">
+              <a
+                href="#"
+                class="header__link header__link_font_16 text-style-title"
+              >
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <div class="header__user header__user_width user header__user_second">
+            <ul class="user__list">
+              <li class="user__item">
+                <a href="#" class="user__link" aria-label="Личный кабинет">
+                  <svg
+                    class="user__icon"
+                    width="26"
+                    height="28"
+                    viewBox="0 0 26 28"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24.98 22.8503C24.3278 21.2785 23.3813 19.8508 22.1933 18.6467C21.0089 17.4392 19.6059 16.4764 18.0617 15.8116C18.0478 15.8045 18.034 15.801 18.0202 15.794C20.1742 14.2111 21.5744 11.6327 21.5744 8.72362C21.5744 3.90452 17.7367 0 13 0C8.26333 0 4.42559 3.90452 4.42559 8.72362C4.42559 11.6327 5.82585 14.2111 7.97982 15.7975C7.96599 15.8045 7.95216 15.808 7.93833 15.8151C6.38941 16.4799 4.99952 17.4332 3.80671 18.6503C2.61981 19.8553 1.67349 21.2827 1.02003 22.8538C0.37806 24.3918 0.0318323 26.0409 8.64563e-05 27.7116C-0.000836348 27.7491 0.00563604 27.7864 0.0191224 27.8214C0.0326088 27.8564 0.0528363 27.8882 0.0786128 27.9151C0.104389 27.942 0.135194 27.9633 0.16921 27.9779C0.203227 27.9925 0.239768 28 0.27668 28H2.35113C2.50326 28 2.62427 27.8769 2.62773 27.7256C2.69688 25.01 3.76868 22.4668 5.66335 20.5392C7.62371 18.5447 10.2271 17.4472 13 17.4472C15.7729 17.4472 18.3763 18.5447 20.3367 20.5392C22.2313 22.4668 23.3031 25.01 23.3723 27.7256C23.3757 27.8804 23.4967 28 23.6489 28H25.7233C25.7602 28 25.7968 27.9925 25.8308 27.9779C25.8648 27.9633 25.8956 27.942 25.9214 27.9151C25.9472 27.8882 25.9674 27.8564 25.9809 27.8214C25.9944 27.7864 26.0008 27.7491 25.9999 27.7116C25.9653 26.0301 25.6231 24.3945 24.98 22.8503ZM13 14.7739C11.413 14.7739 9.91943 14.1442 8.79577 13.001C7.67211 11.8578 7.05323 10.3382 7.05323 8.72362C7.05323 7.10905 7.67211 5.58945 8.79577 4.44623C9.91943 3.30301 11.413 2.67337 13 2.67337C14.587 2.67337 16.0806 3.30301 17.2042 4.44623C18.3279 5.58945 18.9468 7.10905 18.9468 8.72362C18.9468 10.3382 18.3279 11.8578 17.2042 13.001C16.0806 14.1442 14.587 14.7739 13 14.7739Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="user__item">
+                <a
+                  href="#"
+                  class="user__link user__basket"
+                  aria-label="Мини-корзина"
+                >
+                  <span class="user__number">3</span>
+                  <svg
+                    class="user__icon"
+                    width="30"
+                    height="28"
+                    viewBox="0 0 30 28"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M28.8162 19.8503H8.90202L9.90191 17.7365L26.5154 17.7052C27.0772 17.7052 27.5588 17.2887 27.6591 16.7125L29.9599 3.34598C30.0201 2.99541 29.9298 2.63444 29.7091 2.36023C29.6 2.22528 29.4639 2.11658 29.3103 2.04166C29.1567 1.96674 28.9892 1.9274 28.8195 1.92637L7.68476 1.85348L7.50418 0.971861C7.39048 0.40957 6.90224 0 6.34712 0H1.18047C0.86739 0 0.567133 0.129087 0.345752 0.358864C0.124371 0.588641 0 0.900285 0 1.22524C0 1.55019 0.124371 1.86184 0.345752 2.09161C0.567133 2.32139 0.86739 2.45048 1.18047 2.45048H5.3907L6.17991 6.34486L8.12284 16.1086L5.62145 20.3466C5.49155 20.5286 5.4133 20.7446 5.39557 20.9704C5.37784 21.1961 5.42134 21.4225 5.52112 21.6239C5.72177 22.0369 6.12641 22.2973 6.57452 22.2973H8.67462C8.2269 22.9145 7.98508 23.6662 7.98573 24.4388C7.98573 26.4034 9.52402 28 11.4168 28C13.3096 28 14.8478 26.4034 14.8478 24.4388C14.8478 23.6648 14.6004 22.9116 14.159 22.2973H19.5463C19.0986 22.9145 18.8568 23.6662 18.8574 24.4388C18.8574 26.4034 20.3957 28 22.2885 28C24.1812 28 25.7195 26.4034 25.7195 24.4388C25.7195 23.6648 25.4721 22.9116 25.0307 22.2973H28.8195C29.4683 22.2973 30 21.7489 30 21.072C29.9981 20.7474 29.8725 20.4368 29.6507 20.2079C29.4289 19.979 29.1289 19.8504 28.8162 19.8503ZM8.17635 4.26925L27.4317 4.33519L25.5456 15.2964L10.4202 15.3242L8.17635 4.26925ZM11.4168 25.5356C10.8349 25.5356 10.36 25.0428 10.36 24.4388C10.36 23.8349 10.8349 23.342 11.4168 23.342C11.9987 23.342 12.4735 23.8349 12.4735 24.4388C12.4735 24.7297 12.3622 25.0087 12.164 25.2144C11.9658 25.4201 11.6971 25.5356 11.4168 25.5356ZM22.2885 25.5356C21.7066 25.5356 21.2317 25.0428 21.2317 24.4388C21.2317 23.8349 21.7066 23.342 22.2885 23.342C22.8704 23.342 23.3452 23.8349 23.3452 24.4388C23.3452 24.7297 23.2339 25.0087 23.0357 25.2144C22.8375 25.4201 22.5687 25.5356 22.2885 25.5356Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container header-flex">
+          <div class="header__search header__search_width">
+            <div class="search">
+              <form action="Form" class="form">
+                <span class="form__icon">
+                  <svg aria-hidden="true" class="form__search">
+                    <use xlink:href="./images/sprite.svg#search"></use>
+                  </svg>
+                </span>
+                <input
+                  class="form__input"
+                  type="text"
+                  name="search"
+                  placeholder="Я хочу купить..."
+                />
+                <button class="arrow-page form__button" aria-label="Найти">
+                  <svg
+                    class="arrow-svg swiper-button-next-svg"
+                    aria-hidden="true"
+                    width="32px"
+                    height="32px"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="arrow-path-first"
+                      d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                      stroke="#A65CF0"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      class="arrow-path-second"
+                      d="M10.7402 15.5302L14.2602 12.0002L10.7402 8.47021"
+                      stroke="#A65CF0"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </form>
+              <label class="header__city hidden">Выберите</label>
+              <select class="ChoiceFurniture">
+                <option value="5">Диваны</option>
+                <option value="6">Кресла</option>
+                <option value="7">Пуфы</option>
+                <option value="8">Кровати</option>
+                <option value="9">Тумбы</option>
+                <option value="10">Комоды</option>
+                <option value="11">Стулья</option>
+                <option value="12">Столы</option>
+                <option value="13">Аксессуары</option>
+              </select>
+            </div>
+          </div>
+          <div class="header__user header__user_width user header__user_thirst">
+            <ul class="user__list">
+              <li class="user__item">
+                <a href="#" class="user__link" aria-label="Личный кабинет">
+                  <svg
+                    class="user__icon"
+                    width="26"
+                    height="28"
+                    viewBox="0 0 26 28"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24.98 22.8503C24.3278 21.2785 23.3813 19.8508 22.1933 18.6467C21.0089 17.4392 19.6059 16.4764 18.0617 15.8116C18.0478 15.8045 18.034 15.801 18.0202 15.794C20.1742 14.2111 21.5744 11.6327 21.5744 8.72362C21.5744 3.90452 17.7367 0 13 0C8.26333 0 4.42559 3.90452 4.42559 8.72362C4.42559 11.6327 5.82585 14.2111 7.97982 15.7975C7.96599 15.8045 7.95216 15.808 7.93833 15.8151C6.38941 16.4799 4.99952 17.4332 3.80671 18.6503C2.61981 19.8553 1.67349 21.2827 1.02003 22.8538C0.37806 24.3918 0.0318323 26.0409 8.64563e-05 27.7116C-0.000836348 27.7491 0.00563604 27.7864 0.0191224 27.8214C0.0326088 27.8564 0.0528363 27.8882 0.0786128 27.9151C0.104389 27.942 0.135194 27.9633 0.16921 27.9779C0.203227 27.9925 0.239768 28 0.27668 28H2.35113C2.50326 28 2.62427 27.8769 2.62773 27.7256C2.69688 25.01 3.76868 22.4668 5.66335 20.5392C7.62371 18.5447 10.2271 17.4472 13 17.4472C15.7729 17.4472 18.3763 18.5447 20.3367 20.5392C22.2313 22.4668 23.3031 25.01 23.3723 27.7256C23.3757 27.8804 23.4967 28 23.6489 28H25.7233C25.7602 28 25.7968 27.9925 25.8308 27.9779C25.8648 27.9633 25.8956 27.942 25.9214 27.9151C25.9472 27.8882 25.9674 27.8564 25.9809 27.8214C25.9944 27.7864 26.0008 27.7491 25.9999 27.7116C25.9653 26.0301 25.6231 24.3945 24.98 22.8503ZM13 14.7739C11.413 14.7739 9.91943 14.1442 8.79577 13.001C7.67211 11.8578 7.05323 10.3382 7.05323 8.72362C7.05323 7.10905 7.67211 5.58945 8.79577 4.44623C9.91943 3.30301 11.413 2.67337 13 2.67337C14.587 2.67337 16.0806 3.30301 17.2042 4.44623C18.3279 5.58945 18.9468 7.10905 18.9468 8.72362C18.9468 10.3382 18.3279 11.8578 17.2042 13.001C16.0806 14.1442 14.587 14.7739 13 14.7739Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="user__item">
+                <a
+                  href="#"
+                  class="user__link user__basket"
+                  aria-label="Мини-корзина"
+                >
+                  <span class="user__number">3</span>
+                  <svg
+                    class="user__icon"
+                    width="30"
+                    height="28"
+                    viewBox="0 0 30 28"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M28.8162 19.8503H8.90202L9.90191 17.7365L26.5154 17.7052C27.0772 17.7052 27.5588 17.2887 27.6591 16.7125L29.9599 3.34598C30.0201 2.99541 29.9298 2.63444 29.7091 2.36023C29.6 2.22528 29.4639 2.11658 29.3103 2.04166C29.1567 1.96674 28.9892 1.9274 28.8195 1.92637L7.68476 1.85348L7.50418 0.971861C7.39048 0.40957 6.90224 0 6.34712 0H1.18047C0.86739 0 0.567133 0.129087 0.345752 0.358864C0.124371 0.588641 0 0.900285 0 1.22524C0 1.55019 0.124371 1.86184 0.345752 2.09161C0.567133 2.32139 0.86739 2.45048 1.18047 2.45048H5.3907L6.17991 6.34486L8.12284 16.1086L5.62145 20.3466C5.49155 20.5286 5.4133 20.7446 5.39557 20.9704C5.37784 21.1961 5.42134 21.4225 5.52112 21.6239C5.72177 22.0369 6.12641 22.2973 6.57452 22.2973H8.67462C8.2269 22.9145 7.98508 23.6662 7.98573 24.4388C7.98573 26.4034 9.52402 28 11.4168 28C13.3096 28 14.8478 26.4034 14.8478 24.4388C14.8478 23.6648 14.6004 22.9116 14.159 22.2973H19.5463C19.0986 22.9145 18.8568 23.6662 18.8574 24.4388C18.8574 26.4034 20.3957 28 22.2885 28C24.1812 28 25.7195 26.4034 25.7195 24.4388C25.7195 23.6648 25.4721 22.9116 25.0307 22.2973H28.8195C29.4683 22.2973 30 21.7489 30 21.072C29.9981 20.7474 29.8725 20.4368 29.6507 20.2079C29.4289 19.979 29.1289 19.8504 28.8162 19.8503ZM8.17635 4.26925L27.4317 4.33519L25.5456 15.2964L10.4202 15.3242L8.17635 4.26925ZM11.4168 25.5356C10.8349 25.5356 10.36 25.0428 10.36 24.4388C10.36 23.8349 10.8349 23.342 11.4168 23.342C11.9987 23.342 12.4735 23.8349 12.4735 24.4388C12.4735 24.7297 12.3622 25.0087 12.164 25.2144C11.9658 25.4201 11.6971 25.5356 11.4168 25.5356ZM22.2885 25.5356C21.7066 25.5356 21.2317 25.0428 21.2317 24.4388C21.2317 23.8349 21.7066 23.342 22.2885 23.342C22.8704 23.342 23.3452 23.8349 23.3452 24.4388C23.3452 24.7297 23.2339 25.0087 23.0357 25.2144C22.8375 25.4201 22.5687 25.5356 22.2885 25.5356Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <h1 class="hidden">Магазин диваноы</h1>
+      <section class="hero">
+        <div class="hero__swiper swiper">
+          <ul class="hero__wrapper swiper-wrapper swiper-wrapper_stretch">
+            <li class="hero__slide swiper-slide swiper-img swiper-img-first">
+              <div class="container">
+                <div class="swiper-info">
+                  <h2
+                    class="hero__h2 swiper-title swiper-title_width-485 swiper-title_color-gray"
+                  >
+                    Скидка&nbsp;15% на&nbsp;первую покупку
+                  </h2>
+                  <div class="swiper-hidden">
+                    <a href="#" class="hero__btn swiper-btn button-background"
+                      >Получить!</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="hero__slide swiper-slide swiper-img-center swiper-img">
+              <div class="container">
+                <div class="swiper-info">
+                  <h2
+                    class="hero__h2 swiper-title swiper-title_width-485 swiper-title_color-gray"
+                  >
+                    1000+ аксессуаров для дома
+                  </h2>
+                  <div class="swiper-hidden">
+                    <a href="#" class="hero__btn swiper-btn button-background"
+                      >Подробнее</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="hero__slide swiper-slide swiper-img-last swiper-img">
+              <div class="container">
+                <div class="swiper-info">
+                  <h2
+                    class="hero__h2 swiper-title swiper-title_width-585 swiper-title_color-white"
+                  >
+                    Коллекция стильного и&nbsp;яркого текстиля
+                  </h2>
+                  <div class="swiper-hidden">
+                    <a href="#" class="hero__btn swiper-btn button-background"
+                      >Подробнее</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="swiper-pagination swiper-pagination1"></div>
+        </div>
+        <div class="swiper-button-smartphone">
+          <div class="container">
+            <a href="#" class="hero__btn swiper-btn button-background"
+              >Получить!</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="page">
+        <section>
+          <div class="container">
+            <section class="recommendation">
+              <div class="recommendation__grid recommendation__grid_wrapper">
+                <div class="recommendation__flex">
+                  <h2 class="title recommendation__title">
+                    Специальные предложения
+                  </h2>
+                  <div class="swiper-control-smartphone">
+                    <div class="swiper-control">
+                      <div class="swiper-btn">
+                        <div
+                          class="arrow-page swiper-button-prev swiper-button-prev2"
+                        >
+                          <svg
+                            class="arrow-svg swiper-button-next-svg"
+                            width="32px"
+                            height="32px"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              class="arrow-path-first"
+                              d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                              stroke="#A65CF0"
+                              stroke-width="1.5"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              class="arrow-path-second"
+                              d="M10.7402 15.5302L14.2602 12.0002L10.7402 8.47021"
+                              stroke="#A65CF0"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="arrow-page swiper-button-next swiper-button-next2"
+                        >
+                          <svg
+                            class="arrow-svg swiper-button-next-svg"
+                            width="32px"
+                            height="32px"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              class="arrow-path-first"
+                              d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                              stroke="#A65CF0"
+                              stroke-width="1.5"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              class="arrow-path-second"
+                              d="M10.7402 15.5302L14.2602 12.0002L10.7402 8.47021"
+                              stroke="#A65CF0"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper swiper2 swiper-container">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide card card-right">
+                      <div class="card__wrapper">
+                        <span class="card__discount"> - 9 000 </span>
+                        <div class="card__img">
+                          <img
+                            src="./images/armchair1.webp"
+                            alt="Velor armchair"
+                            loading="eager"
+                          />
+                        </div>
+                        <h3 class="card__title">Кресло велюровое</h3>
+                        <p class="card__title card__title-number">“X-24”</p>
+                        <p class="card__price">
+                          15 990 руб
+                          <span class="card__price-cancel"> 24 990 руб </span>
+                        </p>
+                        <a href="#" class="button card__button"> Купить </a>
+                      </div>
+                    </li>
+                    <li class="swiper-slide card card-center">
+                      <div class="card__wrapper">
+                        <span class="card__discount"> - 10 000 </span>
+                        <div class="card__img">
+                          <img
+                            class="card-img1"
+                            width="450"
+                            height="245"
+                            src="./images/armchair2.webp"
+                            alt="fabric sofa"
+                            loading="eager"
+                          />
+                        </div>
+                        <h3 class="card__title">Диван тканевый</h3>
+                        <p class="card__title card__title-number">“Z-44”</p>
+                        <p class="card__price">
+                          22 990 руб
+                          <span class="card__price-cancel"> 32 990 руб </span>
+                        </p>
+                        <a href="#" class="button card__button"> Купить </a>
+                        <img
+                          class="card__picture"
+                          aria-hidden="true"
+                          width="230"
+                          height="107"
+                          src="./images/sprite.svg#sofa"
+                          alt="instruction Sofa"
+                          loading="eager"
+                        />
+                      </div>
+                    </li>
+                    <li class="swiper-slide card card-left">
+                      <div class="card__wrapper">
+                        <span class="card__discount"> - 600 </span>
+                        <div class="card__img">
+                          <img
+                            class=""
+                            width="149"
+                            height="218"
+                            src="./images/Clock.webp"
+                            alt="Alarm"
+                            loading="eager"
+                          />
+                        </div>
+                        <h3 class="card__title">Будильник</h3>
+                        <p class="card__title card__title-number">
+                          “Quartz-23”
+                        </p>
+                        <p class="card__price">
+                          1 290 руб
+                          <span class="card__price-cancel"> 1 890 руб </span>
+                        </p>
+                        <a href="#" class="button card__button"> Купить </a>
+                      </div>
+                    </li>
+                    <li class="swiper-slide card card-right">
+                      <div class="card__wrapper">
+                        <span class="card__discount"> - 300 </span>
+                        <div class="card__img">
+                          <img
+                            class=""
+                            width="117"
+                            height="210"
+                            src="./images/Dear.webp"
+                            alt="Олень"
+                            loading="eager"
+                          />
+                        </div>
+                        <h3 class="card__title">Мини-скульптура</h3>
+                        <p class="card__title card__title-number">
+                          “oh my deer”
+                        </p>
+                        <p class="card__price">
+                          690 руб
+                          <span class="card__price-cancel"> 990 руб </span>
+                        </p>
+                        <a href="#" class="button card__button"> Купить </a>
+                      </div>
+                    </li>
+                    <li class="swiper-slide card card-center">
+                      <div class="card__wrapper">
+                        <span class="card__discount"> - 10 000 </span>
+                        <div class="card__img">
+                          <img
+                            class="card__img2"
+                            src="./images/armchair3.webp"
+                            alt="Vel-flock sofa"
+                            loading="eager"
+                          />
+                        </div>
+                        <h3 class="card__title">Диван вел-флок</h3>
+                        <p class="card__title card__title-number">“Z-85”</p>
+                        <p class="card__price">
+                          22 990 руб
+                          <span class="card__price-cancel"> 32 990 руб </span>
+                        </p>
+                        <a href="#" class="button card__button"> Купить </a>
+                        <img
+                          class="card__picture"
+                          aria-hidden="true"
+                          width="230"
+                          height="107"
+                          src="./images/sprite.svg#sofa2"
+                          alt="sofa instruction"
+                          loading="eager"
+                        />
+                      </div>
+                    </li>
+                    <li class="swiper-slide card card-left">
+                      <div class="card__wrapper">
+                        <span class="card__discount"> - 700 </span>
+                        <div class="card__img">
+                          <img
+                            class=""
+                            width="183"
+                            height="218"
+                            src="./images/clock2.webp"
+                            alt="Thermometer"
+                            loading="lazy"
+                          />
+                        </div>
+                        <h3 class="card__title">Термометр + гидрометр</h3>
+                        <p class="card__title card__title-number">“H-18”</p>
+                        <p class="card__price">
+                          1 390 руб
+                          <span class="card__price-cancel"> 2 090 руб </span>
+                        </p>
+                        <a href="#" class="button card__button"> Купить </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="recommendation__smartphone">
+                <div class="swiper-control">
+                  <div class="swiper-btn swiper-btn-smartphone">
+                    <div
+                      class="arrow-page swiper-button-prev swiper-button-prev2"
+                    >
+                      <svg
+                        class="arrow-svg swiper-button-next-svg"
+                        width="32px"
+                        height="32px"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="arrow-path-first"
+                          d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                          stroke="#A65CF0"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          class="arrow-path-second"
+                          d="M10.7402 15.5302L14.2602 12.0002L10.7402 8.47021"
+                          stroke="#A65CF0"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="arrow-page swiper-button-next swiper-button-next2"
+                    >
+                      <svg
+                        class="arrow-svg swiper-button-next-svg"
+                        width="32px"
+                        height="32px"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="arrow-path-first"
+                          d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                          stroke="#A65CF0"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          class="arrow-path-second"
+                          d="M10.7402 15.5302L14.2602 12.0002L10.7402 8.47021"
+                          stroke="#A65CF0"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="product">
+              <h2 class="title product__title">Высокий рейтинг</h2>
+              <div class="product__page">
+                <ul class="product__grid product__grid_bottom cards">
+                  <li class="cards__wrapper cards__wrapper_product">
+                    <article class="cards">
+                      <span class="cards__star">
+                        <img
+                          class="cards__star-icon"
+                          src="./images/sprite.svg#star"
+                          alt="Stars"
+                          loading="lazy"
+                        />
+                        5,0
+                      </span>
+                      <div class="cards__image">
+                        <img
+                          src="./images/armchair4.webp"
+                          alt="Диван кожаный"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="cards__content">
+                        <h3 class="cards__title">Диван кожаный</h3>
+                        <span class="cards__number"> “R-94” </span>
+                        <p class="cards__descr">94 990 руб</p>
+                        <a href="#" class="button cards__button">Купить</a>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="cards__wrapper cards__wrapper_product">
+                    <article class="cards">
+                      <div class="cards__image">
+                        <img
+                          src="./images/armchair5.webp"
+                          alt="Извергающийся вулкан"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="cards__content">
+                        <h3 class="cards__title">Диван апартековый</h3>
+                        <span class="cards__number"> “T-75” </span>
+                        <p class="cards__descr">69 990 руб</p>
+                        <a href="#" class="button cards__button">Купить</a>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="cards__wrapper cards__wrapper_product">
+                    <article class="cards">
+                      <div class="cards__image">
+                        <img
+                          src="./images/armchair6.webp"
+                          alt="Извергающийся вулкан"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="cards__content">
+                        <h3 class="cards__title">Диван тканевый</h3>
+                        <span class="cards__number"> “D-31” </span>
+                        <p class="cards__descr">28 490 руб</p>
+                        <a href="./order.html" class="button cards__button"
+                          >Купить</a
+                        >
+                      </div>
+                    </article>
+                  </li>
+                  <li class="cards__wrapper cards__wrapper_product">
+                    <article class="cards">
+                      <div class="cards__image">
+                        <img
+                          src="./images/armchair7.webp"
+                          alt="Извергающийся вулкан"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="cards__content">
+                        <h3 class="cards__title">Диван велюровый</h3>
+                        <span class="cards__number"> “Y-68” </span>
+                        <p class="cards__descr">22 990 руб</p>
+                        <a href="#" class="button cards__button">Купить</a>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="cards__wrapper cards__wrapper_product">
+                    <article class="cards">
+                      <div class="cards__image">
+                        <img
+                          src="./images/armchair8.webp"
+                          alt="Извергающийся вулкан"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="cards__content">
+                        <h3 class="cards__title">Диван из шинила</h3>
+                        <span class="cards__number"> “W-95” </span>
+                        <p class="cards__descr">22 990 руб</p>
+                        <a href="#" class="button cards__button">Купить</a>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="cards__wrapper cards__wrapper_product">
+                    <article class="cards">
+                      <div class="cards__image">
+                        <img
+                          src="./images/armchair9.webp"
+                          alt="Извергающийся вулкан"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="cards__content">
+                        <h3 class="cards__title">Диван флоковый</h3>
+                        <span class="cards__number"> “G-41” </span>
+                        <p class="cards__descr">17 990 руб</p>
+                        <a href="#" class="button cards__button">Купить</a>
+                      </div>
+                    </article>
+                  </li>
+                  <li
+                    class="cards__wrapper cards__wrapper_product cards__wrapper_hidden"
+                  >
+                    <article class="cards">
+                      <div class="cards__image">
+                        <img
+                          src="./images/armchair10.webp"
+                          alt="Извергающийся вулкан"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="cards__content">
+                        <h3 class="cards__title">Диван шиниловый</h3>
+                        <span class="cards__number"> “V-43” </span>
+                        <p class="cards__descr">19 990 руб</p>
+                        <a href="#" class="button cards__button">Купить</a>
+                      </div>
+                    </article>
+                  </li>
+                  <li
+                    class="cards__wrapper cards__wrapper_product cards__wrapper_hidden"
+                  >
+                    <article class="cards">
+                      <div class="cards__image">
+                        <img
+                          src="./images/armchair11.webp"
+                          alt="Извергающийся вулкан"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="cards__content">
+                        <h3 class="cards__title">Диван велюровый</h3>
+                        <span class="cards__number"> “S-99” </span>
+                        <p class="cards__descr">19 990 руб</p>
+                        <a href="#" class="button cards__button">Купить</a>
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+                <button
+                  class="product__button product__button_last button-background"
+                >
+                  Смотреть больше товаров
+                </button>
+              </div>
+            </section>
+          </div>
+        </section>
+        <section>
+          <div class="container-fuild">
+            <section>
+              <div class="new">
+                <div class="container">
+                  <h2 class="new__title">Оксфорд 1950</h2>
+                  <h3 class="new__text">Новая коллекция изысканных кресел</h3>
+                  <button
+                    class="new__button button-background new__button_smartphone_hidden"
+                  >
+                    Ознакомиться
+                  </button>
+                </div>
+              </div>
+              <div class="new-smartphone">
+                <div class="container">
+                  <button class="new-smartphone__button button-background">
+                    Ознакомиться
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+        <section>
+          <div class="container">
+            <section class="category">
+              <h2 class="title">Топ категории</h2>
+              <div class="category__grid">
+                <div class="category__item category__item_top_left">
+                  <ul class="category__text-list category__text-special">
+                    <li class="category__text-item category__text-special">
+                      Прямые
+                    </li>
+                    <li class="category__text-item category__text-special">
+                      Угловые
+                    </li>
+                    <li class="category__text-item category__text-special">
+                      Модульные
+                    </li>
+                  </ul>
+                  <h2
+                    class="category__title category__title_smartphone category-smartphone"
+                  >
+                    Диваны
+                    <button class="category-smartphone__button">
+                      <span class="category__button-line">
+                        <svg
+                          class="line"
+                          width="81"
+                          aria-hidden="true"
+                          height="2"
+                          viewBox="0 0 81 2"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <line
+                            y1="1"
+                            x2="81"
+                            y2="1"
+                            stroke="#A65CF0"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </span>
+                      <svg
+                        class="arrow-svg"
+                        aria-hidden="true"
+                        width="26px"
+                        height="26px"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="arrow-path-first"
+                          d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                          stroke="#A65CF0"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          class="arrow-path-second"
+                          d="M10.7402 15.5302L14.2602 12.0002L10.7402 8.47021"
+                          stroke="#A65CF0"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </h2>
+                  <picture>
+                    <source
+                      media="(max-width:320px)"
+                      srcset="./images/soaf1-category-560.webp"
+                    />
+                    <img
+                      class="category__img category__img_1 category__img_smartphone_hidden"
+                      src="./images/soaf1-category.webp"
+                      alt="Диваны"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <button
+                    class="category__button arrow-page category__button_hidden"
+                  >
+                    В каталог
+                    <span class="category__button-line">
+                      <svg
+                        class="line"
+                        width="81"
+                        aria-hidden="true"
+                        height="2"
+                        viewBox="0 0 81 2"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <line
+                          y1="1"
+                          x2="81"
+                          y2="1"
+                          stroke="#A65CF0"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </span>
+                    <svg
+                      class="arrow-svg"
+                      aria-hidden="true"
+                      width="26px"
+                      height="26px"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="arrow-path-first"
+                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                        stroke="#A65CF0"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="arrow-path-second"
+                        d="M10.7402 15.5302L14.2602 12.0002L10.7402 8.47021"
+                        stroke="#A65CF0"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="category__item category__item_top_right">
+                  <ul class="category__text-list">
+                    <li class="category__text-item">Мягкие</li>
+                    <li class="category__text-item">Кресла-кровати</li>
+                  </ul>
+                  <h2 class="category__title category-smartphone">
+                    Кресла
+                    <button class="category-smartphone__button">
+                      <span class="category__button-line">
+                        <svg
+                          class="line"
+                          width="81"
+                          aria-hidden="true"
+                          height="2"
+                          viewBox="0 0 81 2"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <line
+                            y1="1"
+                            x2="81"
+                            y2="1"
+                            stroke="#A65CF0"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </span>
+                      <svg
+                        class="arrow-svg"
+                        aria-hidden="true"
+                        width="26px"
+                        height="26px"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="arrow-path-first"
+                          d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                          stroke="#A65CF0"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          class="arrow-path-second"
+                          d="M10.7402 15.5302L14.2602 12.0002L10.7402 8.47021"
+                          stroke="#A65CF0"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </h2>
+                  <picture>
+                    <source
+                      media="(max-width:320px)"
+                      srcset="./images/sofa2-category-560.webp"
+                    />
+                    <img
+                      class="category__img"
+                      src="./images/sofa2-category.webp"
+                      alt="armchairs"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <button
+                    class="category__button arrow-page category__button_hidden"
+                  >
+                    В каталог
+                    <span class="category__button-line">
+                      <svg
+                        class="line"
+                        aria-hidden="true"
+                        width="81"
+                        height="2"
+                        viewBox="0 0 81 2"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <line
+                          y1="1"
+                          x2="81"
+                          y2="1"
+                          stroke="#A65CF0"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </span>
+                    <svg
+                      class="arrow-svg"
+                      aria-hidden="true"
+                      width="26px"
+                      height="26px"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="arrow-path-first"
+                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                        stroke="#A65CF0"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="arrow-path-second"
+                        d="M10.7402 15.5302L14.2602 12.0002L10.7402 8.47021"
+                        stroke="#A65CF0"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="category__item category__item_bottom_left">
+                  <ul class="category__text-list">
+                    <li class="category__text-item">Односпальные</li>
+                    <li class="category__text-item">Двуспальные</li>
+                  </ul>
+                  <h2 class="category__title category-smartphone">
+                    Кровати
+                    <button class="category-smartphone__button">
+                      <span class="category__button-line">
+                        <svg
+                          class="line"
+                          width="81"
+                          aria-hidden="true"
+                          height="2"
+                          viewBox="0 0 81 2"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <line
+                            y1="1"
+                            x2="81"
+                            y2="1"
+                            stroke="#A65CF0"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </span>
+                      <svg
+                        class="arrow-svg"
+                        aria-hidden="true"
+                        width="26px"
+                        height="26px"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="arrow-path-first"
+                          d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                          stroke="#A65CF0"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          class="arrow-path-second"
+                          d="M10.7402 15.5302L14.2602 12.0002L10.7402 8.47021"
+                          stroke="#A65CF0"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </h2>
+                  <picture>
+                    <source
+                      media="(max-width:320px)"
+                      srcset="./images/sofa3-category-560.webp"
+                    />
+                    <img
+                      class="category__img"
+                      src="./images/sofa3-category.webp"
+                      alt="Beds"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <button
+                    class="category__button arrow-page category__button_hidden"
+                  >
+                    В каталог
+                    <span class="category__button-line">
+                      <svg
+                        class="line"
+                        aria-hidden="true"
+                        width="81"
+                        height="2"
+                        viewBox="0 0 81 2"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <line
+                          y1="1"
+                          x2="81"
+                          y2="1"
+                          stroke="#A65CF0"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </span>
+                    <svg
+                      class="arrow-svg"
+                      aria-hidden="true"
+                      width="26px"
+                      height="26px"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="arrow-path-first"
+                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                        stroke="#A65CF0"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="arrow-path-second"
+                        d="M10.7402 15.5302L14.2602 12.0002L10.7402 8.47021"
+                        stroke="#A65CF0"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="category__item category__item_bottom_center">
+                  <ul class="category__text-list">
+                    <li class="category__text-item">Тумбы</li>
+                    <li class="category__text-item">Комоды</li>
+                  </ul>
+                  <h2 class="category__title category-smartphone">
+                    Тумбы и&nbsp;комоды
+                    <button
+                      class="category-smartphone__button category-smartphone__button_1"
+                    >
+                      <span class="category__button-line">
+                        <svg
+                          class="line"
+                          width="81"
+                          aria-hidden="true"
+                          height="2"
+                          viewBox="0 0 81 2"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <line
+                            y1="1"
+                            x2="81"
+                            y2="1"
+                            stroke="#A65CF0"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </span>
+                      <svg
+                        class="arrow-svg"
+                        aria-hidden="true"
+                        width="26px"
+                        height="26px"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="arrow-path-first"
+                          d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                          stroke="#A65CF0"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          class="arrow-path-second"
+                          d="M10.7402 15.5302L14.2602 12.0002L10.7402 8.47021"
+                          stroke="#A65CF0"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </h2>
+                  <picture>
+                    <source
+                      media="(max-width:320px)"
+                      srcset="./images/sofa4-category-560.webp"
+                    />
+                    <img
+                      class="category__img category__img_4"
+                      src="./images/sofa4-category.webp"
+                      alt="Cabinets and chests of drawers"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <button
+                    class="category__button arrow-page category__button_hidden"
+                  >
+                    В каталог
+                    <span class="category__button-line">
+                      <svg
+                        class="line"
+                        aria-hidden="true"
+                        width="81"
+                        height="2"
+                        viewBox="0 0 81 2"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <line
+                          y1="1"
+                          x2="81"
+                          y2="1"
+                          stroke="#A65CF0"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </span>
+                    <svg
+                      class="arrow-svg"
+                      aria-hidden="true"
+                      width="26px"
+                      height="26px"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="arrow-path-first"
+                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                        stroke="#A65CF0"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="arrow-path-second"
+                        d="M10.7402 15.5302L14.2602 12.0002L10.7402 8.47021"
+                        stroke="#A65CF0"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="category__item category__item_bottom_right">
+                  <ul class="category__text-list">
+                    <li class="category__text-item">Деревянные</li>
+                    <li class="category__text-item">Металлокаркас</li>
+                  </ul>
+                  <h2 class="category__title category-smartphone">
+                    Стулья
+                    <button class="category-smartphone__button">
+                      <span class="category__button-line">
+                        <svg
+                          class="line"
+                          width="81"
+                          aria-hidden="true"
+                          height="2"
+                          viewBox="0 0 81 2"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <line
+                            y1="1"
+                            x2="81"
+                            y2="1"
+                            stroke="#A65CF0"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </span>
+                      <svg
+                        class="arrow-svg"
+                        aria-hidden="true"
+                        width="26px"
+                        height="26px"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="arrow-path-first"
+                          d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                          stroke="#A65CF0"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          class="arrow-path-second"
+                          d="M10.7402 15.5302L14.2602 12.0002L10.7402 8.47021"
+                          stroke="#A65CF0"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </h2>
+                  <picture>
+                    <source
+                      media="(max-width:320px)"
+                      srcset="./images/sofa5-category-560.webp"
+                    />
+                    <img
+                      class="category__img"
+                      src="./images/sofa5-category.webp"
+                      alt="Chairs"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <button
+                    class="category__button arrow-page category__button_hidden"
+                  >
+                    В каталог
+                    <span class="category__button-line">
+                      <svg
+                        class="line"
+                        aria-hidden="true"
+                        width="81"
+                        height="2"
+                        viewBox="0 0 81 2"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <line
+                          y1="1"
+                          x2="81"
+                          y2="1"
+                          stroke="#A65CF0"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </span>
+                    <svg
+                      class="arrow-svg"
+                      aria-hidden="true"
+                      width="26px"
+                      height="26px"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="arrow-path-first"
+                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                        stroke="#A65CF0"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="arrow-path-second"
+                        d="M10.7402 15.5302L14.2602 12.0002L10.7402 8.47021"
+                        stroke="#A65CF0"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </section>
+            <section class="useful">
+              <div class="useful__grid">
+                <h2 class="title">Полезное</h2>
+                <div
+                  class="userful-smartphone userful-smartphone-hidden swiper-control-smartphone"
+                >
+                  <div class="swiper-control">
+                    <div class="swiper-btn">
+                      <div
+                        class="arrow-page swiper-button-prev swiper-button-prev3"
+                      >
+                        <svg
+                          class="arrow-svg swiper-button-next-svg"
+                          width="32px"
+                          height="32px"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="arrow-path-first"
+                            d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                            stroke="#A65CF0"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            class="arrow-path-second"
+                            d="M10.7402 15.5302L14.2602 12.0002L10.7402 8.47021"
+                            stroke="#A65CF0"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="arrow-page swiper-button-next swiper-button-next3"
+                      >
+                        <svg
+                          class="arrow-svg swiper-button-next-svg"
+                          width="32px"
+                          height="32px"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="arrow-path-first"
+                            d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                            stroke="#A65CF0"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            class="arrow-path-second"
+                            d="M10.7402 15.5302L14.2602 12.0002L10.7402 8.47021"
+                            stroke="#A65CF0"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper swiper3">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide_hidden">
+                      <ul class="useful__grid useful__grid_gap cards">
+                        <li class="useful__card">
+                          <article class="cards">
+                            <div class="cards__image cards__image_useful">
+                              <img
+                                src="./images/userful-img1.webp"
+                                alt="Извергающийся вулкан"
+                                loading="lazy"
+                              />
+                            </div>
+                            <div class="cards__content cards__content_useful">
+                              <h3 class="cards__title cards__title_useful">
+                                И нет сомнений, что сделанные на базе
+                                интернет-аналитики выводы представляют собой не
+                                что иное?
+                              </h3>
+                              <a href="#" class="button cards__button"
+                                >Читать</a
+                              >
+                            </div>
+                          </article>
+                        </li>
+                        <li class="useful__card useful__card_smartphone_hidden">
+                          <article class="cards">
+                            <div class="cards__image cards__image_useful">
+                              <img
+                                src="./images/userful-img2.webp"
+                                alt="Извергающийся вулкан"
+                                loading="lazy"
+                              />
+                            </div>
+                            <div class="cards__content cards__content_useful">
+                              <h3 class="cards__title cards__title_useful">
+                                Как принято считать, некоторые особенности
+                                приносят несомненную пользу обществу?
+                              </h3>
+                              <a href="#" class="button cards__button"
+                                >Читать</a
+                              >
+                            </div>
+                          </article>
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="swiper-slide swiper-slide_hidden swiper-slide_decstop_hidden2"
+                    >
+                      <ul class="useful__grid useful__grid_gap cards">
+                        <li class="useful__card">
+                          <article class="cards">
+                            <div class="cards__image cards__image_useful">
+                              <img
+                                src="./images/userful-img2.webp"
+                                alt="Извергающийся вулкан"
+                                loading="lazy"
+                              />
+                            </div>
+                            <div class="cards__content cards__content_useful">
+                              <h3 class="cards__title cards__title_useful">
+                                Ясность нашей позиции очевидна: укрепление и
+                                развитие внутренней структуры?
+                              </h3>
+                              <a href="#" class="button cards__button"
+                                >Читать</a
+                              >
+                            </div>
+                          </article>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="swiper-slide swiper-slide_hidden">
+                      <ul class="useful__grid useful__grid_gap cards">
+                        <li class="useful__card">
+                          <article class="cards">
+                            <div class="cards__image cards__image_useful">
+                              <img
+                                src="./images/userful-img3.webp"
+                                alt="Извергающийся вулкан"
+                                loading="lazy"
+                              />
+                            </div>
+                            <div class="cards__content cards__content_useful">
+                              <h3 class="cards__title cards__title_useful">
+                                Ясность нашей позиции очевидна: укрепление и
+                                развитие внутренней структуры?
+                              </h3>
+                              <a href="#" class="button cards__button"
+                                >Читать</a
+                              >
+                            </div>
+                          </article>
+                        </li>
+                        <li class="useful__card userful-smartphone">
+                          <article class="cards">
+                            <div class="cards__image cards__image_useful">
+                              <img
+                                src="./images/userful-img4.webp"
+                                alt="Извергающийся вулкан"
+                                loading="lazy"
+                              />
+                            </div>
+                            <div class="cards__content cards__content_useful">
+                              <h3 class="cards__title cards__title_useful">
+                                Прежде всего, консультация с широким активом
+                                однозначно фиксирует необходимость
+                                распределения?
+                              </h3>
+                              <a href="#" class="button cards__button"
+                                >Читать</a
+                              >
+                            </div>
+                          </article>
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="swiper-slide swiper-slide_hidden swiper-slide_decstop_hidden2"
+                    >
+                      <ul class="useful__grid useful__grid_gap cards">
+                        <li class="useful__card">
+                          <article class="cards">
+                            <div class="cards__image cards__image_useful">
+                              <img
+                                src="./images/userful-img4.webp"
+                                alt="Извергающийся вулкан"
+                                loading="lazy"
+                              />
+                            </div>
+                            <div class="cards__content cards__content_useful">
+                              <h3 class="cards__title cards__title_useful">
+                                И нет сомнений, что сделанные на базе
+                                интернет-аналитики выводы представляют собой не
+                                что иное?
+                              </h3>
+                              <a href="#" class="button cards__button"
+                                >Читать</a
+                              >
+                            </div>
+                          </article>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="swiper-slide swiper-slide_hidden">
+                      <ul class="useful__grid useful__grid_gap cards">
+                        <li class="useful__card">
+                          <article class="cards">
+                            <div class="cards__image cards__image_useful">
+                              <img
+                                src="./images/userful-img5.webp"
+                                alt="Извергающийся вулкан"
+                                loading="lazy"
+                              />
+                            </div>
+                            <div class="cards__content cards__content_useful">
+                              <h3 class="cards__title cards__title_useful">
+                                Как принято считать, некоторые особенности
+                                приносят несомненную пользу обществу?
+                              </h3>
+                              <a href="#" class="button cards__button"
+                                >Читать</a
+                              >
+                            </div>
+                          </article>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="swiper-slide swiper-slide_lap_hidden">
+                      <ul class="useful__grid useful__grid_gap cards">
+                        <li class="useful__card">
+                          <article class="cards">
+                            <div class="cards__image cards__image_useful">
+                              <img
+                                src="./images/userful-img1.webp"
+                                alt="Извергающийся вулкан"
+                                loading="lazy"
+                              />
+                            </div>
+                            <div class="cards__content cards__content_useful">
+                              <h3 class="cards__title cards__title_useful">
+                                И нет сомнений, что сделанные на базе
+                                интернет-аналитики выводы представляют собой не
+                                что иное?
+                              </h3>
+                              <a href="#" class="button cards__button"
+                                >Читать</a
+                              >
+                            </div>
+                          </article>
+                        </li>
+                        <li class="useful__card">
+                          <article class="cards">
+                            <div class="cards__image cards__image_useful">
+                              <img
+                                src="./images/userful-img2.webp"
+                                alt="Извергающийся вулкан"
+                                loading="lazy"
+                              />
+                            </div>
+                            <div class="cards__content cards__content_useful">
+                              <h3 class="cards__title cards__title_useful">
+                                И нет сомнений, что сделанные на базе
+                                интернет-аналитики выводы представляют собой не
+                                что иное?
+                              </h3>
+                              <a href="#" class="button cards__button"
+                                >Читать</a
+                              >
+                            </div>
+                          </article>
+                        </li>
+                        <li class="useful__card">
+                          <article class="cards">
+                            <div class="cards__image cards__image_useful">
+                              <img
+                                src="./images/userful-img3.webp"
+                                alt="Извергающийся вулкан"
+                                loading="lazy"
+                              />
+                            </div>
+                            <div class="cards__content cards__content_useful">
+                              <h3 class="cards__title cards__title_useful">
+                                И нет сомнений, что сделанные на базе
+                                интернет-аналитики выводы представляют собой не
+                                что иное?
+                              </h3>
+                              <a href="#" class="button cards__button"
+                                >Читать</a
+                              >
+                            </div>
+                          </article>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="swiper-slide swiper-slide_lap_hidden">
+                      <ul class="useful__grid useful__grid_gap cards">
+                        <li class="useful__card">
+                          <article class="cards">
+                            <div class="cards__image cards__image_useful">
+                              <img
+                                src="./images/userful-img4.webp"
+                                alt="Извергающийся вулкан"
+                                loading="lazy"
+                              />
+                            </div>
+                            <div class="cards__content cards__content_useful">
+                              <h3 class="cards__title cards__title_useful">
+                                И нет сомнений, что сделанные на базе
+                                интернет-аналитики выводы представляют собой не
+                                что иное?
+                              </h3>
+                              <a href="#" class="button cards__button"
+                                >Читать</a
+                              >
+                            </div>
+                          </article>
+                        </li>
+                        <li class="useful__card">
+                          <article class="cards">
+                            <div class="cards__image cards__image_useful">
+                              <img
+                                src="./images/userful-img5.webp"
+                                alt="Извергающийся вулкан"
+                                loading="lazy"
+                              />
+                            </div>
+                            <div class="cards__content cards__content_useful">
+                              <h3 class="cards__title cards__title_useful">
+                                И нет сомнений, что сделанные на базе
+                                интернет-аналитики выводы представляют собой не
+                                что иное?
+                              </h3>
+                              <a href="#" class="button cards__button"
+                                >Читать</a
+                              >
+                            </div>
+                          </article>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="useful__smartphone">
+                  <div class="swiper-control">
+                    <div class="swiper-btn swiper-btn-smartphone">
+                      <div
+                        class="arrow-page swiper-button-prev swiper-button-prev3"
+                      >
+                        <svg
+                          class="arrow-svg swiper-button-next-svg"
+                          width="32px"
+                          height="32px"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="arrow-path-first"
+                            d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                            stroke="#A65CF0"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            class="arrow-path-second"
+                            d="M10.7402 15.5302L14.2602 12.0002L10.7402 8.47021"
+                            stroke="#A65CF0"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="arrow-page swiper-button-next swiper-button-next3"
+                      >
+                        <svg
+                          class="arrow-svg swiper-button-next-svg"
+                          width="32px"
+                          height="32px"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="arrow-path-first"
+                            d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                            stroke="#A65CF0"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            class="arrow-path-second"
+                            d="M10.7402 15.5302L14.2602 12.0002L10.7402 8.47021"
+                            stroke="#A65CF0"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="statement">
+              <div class="statement__grid">
+                <div class="statement__left">
+                  <h2 class="title statement__title">Мы всегда вам рады!</h2>
+                  <p class="statement__text">
+                    Безусловно, новая модель организационной деятельности в
+                    значительной степени обусловливает важность распределения
+                    внутренних резервов и ресурсов.
+                  </p>
+                  <div
+                    class="marker"
+                    data-tippy-content="Реплицированные с зарубежных источников, исследования формируют глобальную сеть."
+                  >
+                    <img
+                      class=""
+                      width="60"
+                      height="24"
+                      src="./images/sprite.svg#Icon"
+                      alt="To know"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="form-down">
+                    <form
+                      class="form1"
+                      id="myform"
+                      action="javascript: void(0)"
+                    >
+                      <div class="form1__block">
+                        <input
+                          class="form1__input"
+                          type="text"
+                          name="name"
+                          id="name"
+                          placeholder="Как вас зовут?"
+                        />
+                      </div>
+                      <div class="form1__block">
+                        <input
+                          class="form1__input"
+                          type="tel"
+                          name="tel"
+                          id="phone"
+                          placeholder="Ваш телефон"
+                        />
+                      </div>
+                      <div class="form1__block">
+                        <input
+                          class="form1__input"
+                          type="email"
+                          name="email"
+                          id="email"
+                          placeholder="Ваш e-mail"
+                        />
+                      </div>
+                      <input
+                        class="form1__button button-background"
+                        id="submitBtn"
+                        type="submit"
+                        value=" Отправить"
+                        aria-label="Отправить"
+                      />
+                      <label class="check-page">
+                        <input
+                          name="checkbox"
+                          class="check-box"
+                          type="checkbox"
+                          id="myCheckbox"
+                        />
+                        <span class="check-style"></span>
+                        Принимаю
+                        <a href="#" class="form1__text-style"
+                          >пользовательское соглашение</a
+                        >
+                      </label>
+                    </form>
+                    <!-- ----- -->
+                    <div class="modal-overlay">
+                      <div class="modal">
+                        <div class="modal-content">
+                          <button class="modal-close">&times;</button>
+                          <img
+                            width="172"
+                            height="117"
+                            src="./images/sprite.svg#slon"
+                            alt="Logo"
+                          />
+                          <h2 class="modal-title">
+                            Спасибо, мы вам перезвоним!
+                          </h2>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ----- -->
+                  </div>
+                </div>
+                <div class="statement__right">
+                  <picture>
+                    <source
+                      media="(max-width:768px)"
+                      srcset="./images/statement-img-tablet.webp"
+                    />
+                    <img
+                      class="statement__img"
+                      src="./images/statement-img.webp"
+                      alt="Sofa 3D"
+                      style="width: auto"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__logo">
+            <img
+              class="footer__logo-img"
+              src="./images/footer-logo.webp"
+              width="187"
+              height="27"
+              alt="Logo"
+              loading="lazy"
+            />
+            <ul class="footer__social">
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link" aria-label="Фейсбук">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 30 30"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 0C6.74999 0 0 6.76205 0 15.0904C0 22.6205 5.48999 28.8705 12.66 30V19.4578H8.84999V15.0904H12.66V11.762C12.66 7.98193 14.895 5.90361 18.33 5.90361C19.965 5.90361 21.675 6.18976 21.675 6.18976V9.90964H19.785C17.925 9.90964 17.34 11.0693 17.34 12.259V15.0904H21.51L20.835 19.4578H17.34V30C20.8746 29.4395 24.0933 27.6288 26.4149 24.8947C28.7364 22.1606 30.008 18.6832 30 15.0904C30 6.76205 23.25 0 15 0Z"
+                      fill="#999999"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link" aria-label="Вконтакте">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 30 30"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 0C6.71601 0 0 6.7157 0 15C0 23.2843 6.71601 30 15 30C23.284 30 30 23.2843 30 15C30 6.7157 23.284 0 15 0ZM22.6088 16.6223C23.3079 17.3052 24.0476 17.9478 24.6752 18.7013C24.9532 19.0346 25.2153 19.3792 25.4148 19.7669C25.6996 20.3196 25.4425 20.9257 24.9477 20.9586L21.8747 20.958C21.081 21.0236 20.4494 20.7035 19.9169 20.1609C19.4919 19.7285 19.0975 19.2666 18.6881 18.8194C18.5208 18.6359 18.3447 18.4631 18.1347 18.3272C17.7158 18.0546 17.3518 18.1381 17.1118 18.5758C16.8672 19.0211 16.8114 19.5146 16.788 20.0102C16.7546 20.7348 16.5361 20.9242 15.809 20.9583C14.2554 21.031 12.7814 20.7953 11.4114 20.0121C10.2028 19.3212 9.26731 18.3462 8.45217 17.2423C6.86486 15.0902 5.64921 12.7283 4.55693 10.2985C4.3111 9.7513 4.49095 9.45852 5.09463 9.44716C6.0976 9.42783 7.10056 9.43028 8.10353 9.44624C8.51171 9.45268 8.78179 9.68624 8.93862 10.0714C9.48061 11.4049 10.1451 12.6737 10.9777 13.8503C11.1996 14.1637 11.4261 14.4761 11.7486 14.6974C12.1047 14.9417 12.376 14.861 12.5438 14.4635C12.6513 14.2109 12.6976 13.9409 12.7209 13.6702C12.8007 12.743 12.8102 11.8162 12.6721 10.8927C12.5862 10.3148 12.2612 9.94158 11.6851 9.83233C11.3917 9.77678 11.4347 9.66813 11.5774 9.50056C11.8251 9.21084 12.0571 9.03161 12.5208 9.03161L15.9928 9.031C16.5401 9.13841 16.6628 9.38394 16.7371 9.93514L16.7402 13.7936C16.7337 14.0069 16.8473 14.6391 17.2303 14.7787C17.5372 14.88 17.7397 14.6339 17.9233 14.4396C18.7559 13.556 19.3492 12.5131 19.8804 11.4338C20.1149 10.9577 20.3171 10.4652 20.5136 9.97166C20.6596 9.60675 20.8868 9.42721 21.2986 9.43335L24.642 9.43734C24.7406 9.43734 24.8406 9.43826 24.9382 9.45514C25.5017 9.55151 25.6561 9.79396 25.4817 10.3436C25.2074 11.2073 24.6743 11.9266 24.1531 12.6479C23.5946 13.4201 22.9989 14.1652 22.4458 14.9408C21.9376 15.6497 21.9778 16.0066 22.6088 16.6223Z"
+                      fill="#999999"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link" aria-label="Инстаграмм">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 30 30"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_38_39)">
+                      <path
+                        d="M12.1289 15C12.1289 16.5857 13.4143 17.8711 15 17.8711C16.5857 17.8711 17.8711 16.5857 17.8711 15C17.8711 13.4143 16.5857 12.1289 15 12.1289C13.4143 12.1289 12.1289 13.4143 12.1289 15Z"
+                        fill="#999999"
+                      />
+                      <path
+                        d="M8.28558 9.91991C8.4236 9.54591 8.64378 9.2074 8.92989 8.92953C9.20775 8.64343 9.54604 8.42325 9.92026 8.28523C10.2238 8.16736 10.6797 8.02705 11.5195 7.98883C12.4279 7.9474 12.7003 7.93848 15.0001 7.93848C17.3001 7.93848 17.5725 7.94717 18.4807 7.9886C19.3204 8.02705 19.7766 8.16736 20.0799 8.28523C20.4541 8.42325 20.7926 8.64343 21.0702 8.92953C21.3563 9.2074 21.5765 9.54568 21.7148 9.91991C21.8326 10.2234 21.9729 10.6796 22.0112 11.5193C22.0526 12.4275 22.0615 12.6999 22.0615 14.9999C22.0615 17.2997 22.0526 17.5721 22.0112 18.4805C21.9729 19.3203 21.8326 19.7762 21.7148 20.0797C21.5765 20.454 21.3566 20.7923 21.0705 21.0701C20.7926 21.3562 20.4543 21.5764 20.0801 21.7144C19.7766 21.8325 19.3204 21.9728 18.4807 22.011C17.5725 22.0525 17.3003 22.0612 15.0003 22.0612C12.7 22.0612 12.4277 22.0525 11.5197 22.011C10.6799 21.9728 10.2238 21.8325 9.92026 21.7144C9.16907 21.4247 8.57535 20.8309 8.28558 20.0797C8.16771 19.7762 8.0274 19.3203 7.98895 18.4805C7.94753 17.5721 7.93883 17.2997 7.93883 14.9999C7.93883 12.6999 7.94753 12.4275 7.98895 11.5193C8.02718 10.6796 8.16748 10.2234 8.28558 9.91991ZM15.0001 19.4226C17.4429 19.4226 19.4232 17.4426 19.4232 14.9997C19.4232 12.5569 17.4429 10.5768 15.0001 10.5768C12.5574 10.5768 10.5771 12.5569 10.5771 14.9997C10.5771 17.4426 12.5574 19.4226 15.0001 19.4226ZM10.4023 11.4356C10.9731 11.4356 11.4359 10.9728 11.4359 10.4019C11.4359 9.8311 10.9731 9.3683 10.4023 9.3683C9.83145 9.3683 9.36865 9.8311 9.36865 10.4019C9.36888 10.9728 9.83145 11.4356 10.4023 11.4356Z"
+                        fill="#999999"
+                      />
+                      <path
+                        d="M15 0C23.283 0 30 6.717 30 15C30 23.283 23.283 30 15 30C6.717 30 0 23.283 0 15C0 6.717 6.717 0 15 0ZM6.43867 18.5511C6.48033 19.468 6.62613 20.094 6.83899 20.6419C7.28645 21.7989 8.20107 22.7135 9.35806 23.161C9.90578 23.3739 10.532 23.5194 11.4487 23.5613C12.3672 23.6032 12.6606 23.6133 14.9998 23.6133C17.3392 23.6133 17.6324 23.6032 18.5511 23.5613C19.4678 23.5194 20.094 23.3739 20.6417 23.161C21.2167 22.9447 21.7371 22.6057 22.1674 22.1674C22.6055 21.7374 22.9445 21.2167 23.1608 20.6419C23.3736 20.0942 23.5194 19.468 23.5611 18.5513C23.6034 17.6326 23.6133 17.3392 23.6133 15C23.6133 12.6608 23.6034 12.3674 23.5613 11.4489C23.5197 10.532 23.3741 9.90601 23.1612 9.35806C22.9449 8.78334 22.6057 8.26263 22.1674 7.83257C21.7374 7.39426 21.2167 7.05528 20.6419 6.83899C20.094 6.62613 19.468 6.48056 18.5511 6.43867C17.6326 6.39679 17.3392 6.38672 15 6.38672C12.6608 6.38672 12.3674 6.39679 11.4489 6.4389C10.532 6.48056 9.90601 6.62613 9.35806 6.83876C8.78334 7.05505 8.26263 7.39426 7.83234 7.83257C7.39426 8.26286 7.05505 8.78334 6.83899 9.35806C6.6259 9.90601 6.48033 10.532 6.43845 11.4489C6.39656 12.3674 6.38672 12.6608 6.38672 15C6.38672 17.3392 6.39656 17.6326 6.43867 18.5511Z"
+                        fill="#999999"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_38_39">
+                        <rect
+                          width="30"
+                          height="30"
+                          fill="white"
+                          transform="matrix(-1 0 0 1 30 0)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="footer__navigator footer__navigator_grid">
+            <li class="footer__block">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__text text-style-title"> О нас </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__text text-style"> О компании </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__text text-style"> Блог </a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__block">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__text text-style-title"> Услуги </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__text text-style"> Доставка </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__text text-style">
+                    Рассрочка и кредит
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__text text-style">
+                    Сборка и установка
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__block">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__text text-style-title">
+                    Связь с нами
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__text text-style">
+                    Обратная связь
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__text text-style"> Контакты </a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__block">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__text text-style-title">
+                    Сотрудничество
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__text text-style"> Поставщикам </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__text text-style"> Оптовикам </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__text text-style"> Карьера </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-panel">
+      <p class="footer-panel__text">SDP® 2011-2021</p>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
+    ></script>
+    <script defer src="https://unpkg.com/popper.js@1"></script>
+    <script
+      defer
+      src="https://unpkg.com/tippy.js@5/dist/tippy-bundle.iife.js"
+    ></script>
+    <script defer src="./js/resource/hystmodal.min.js"></script>
+    <!-- Валидация jquery, Следующий раз буду JustValidate -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/jquery.inputmask.min.js"
+    ></script>
+    <script defer src="./js/app.js"></script>
+  </body>
+</html>
